@@ -1,6 +1,6 @@
 package org.example.service;
 
-import org.example.Model.Animal;
+import org.example.Model.Pet;
 import org.example.Texts;
 
 import java.util.List;
@@ -25,21 +25,21 @@ public class MenuService {
         commands.forEach(System.out::println);
     }
 
-    public Animal addPet() {
-        Animal.AnimalBuilder builder = Animal.builder();
-        System.out.println(Texts.ANIMAL_NAME.getText());
+    public Pet addPet() {
+        Pet.PetBuilder builder = Pet.builder();
+        System.out.println(Texts.PET_NAME.getText());
         builder.name(scanner.next());
-        System.out.println(Texts.ANIMAL_AGE.getText());
+        System.out.println(Texts.PET_AGE.getText());
         builder.age(scanner.nextInt());
-        System.out.println(Texts.ANIMAL_TYPE.getText());
+        System.out.println(Texts.PET_TYPE.getText());
         builder.type(scanner.next());
-        System.out.println(Texts.ANIMAL_BREED.getText());
+        System.out.println(Texts.PET_BREED.getText());
         builder.breed(scanner.next());
         return builder.build();
     }
 
     public String takePet() {
-        System.out.println(Texts.ANIMAL_NAME.getText());
+        System.out.println(Texts.PET_NAME.getText());
         return scanner.next();
     }
 

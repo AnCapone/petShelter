@@ -7,10 +7,13 @@ public enum Texts {
     MENU_EXIT("Exit"),
     WELCOME("Welcome to the pet shelter!"),
     SUCCESFULL("Operation was succesfull!"),
-    ANIMAL_NAME("Enter the name of the animal:"),
-    ANIMAL_AGE("Enter the age of the animal:"),
-    ANIMAL_TYPE("Enter the type of the animal:"),
-    ANIMAL_BREED("Enter the breed of the animal:");
+    PET_NAME("Enter the name of the animal:"),
+    PET_AGE("Enter the age of the animal:"),
+    PET_TYPE("Enter the type of the animal:"),
+    PET_BREED("Enter the breed of the animal:"),
+    NO_PETS_DATA("Can't get pets data!"),
+    CANT_SAVE_DATA("Can't save pets data!");
+
 
 
     private final String text;

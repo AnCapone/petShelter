@@ -12,7 +12,8 @@ public enum Texts {
     PET_TYPE("Enter the type of the animal:"),
     PET_BREED("Enter the breed of the animal:"),
     NO_PETS_DATA("Can't get pets data!"),
-    CANT_SAVE_DATA("Can't save pets data!");
+    CANT_SAVE_DATA("Can't save pets data!"),
+    WRONG_COMMAND("Wrong command!");
 
 
 

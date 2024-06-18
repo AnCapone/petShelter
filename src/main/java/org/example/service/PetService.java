@@ -9,13 +9,14 @@ import org.example.Texts;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class PetService {
     private ObjectMapper mapper;
     private MenuService menuService;
     private File shelter = new File("shelter.json");
-    private List<Pet> pets;
+    private List<Pet> pets = new ArrayList<>();
 
 
     public PetService(MenuService menuService) {
@@ -35,7 +36,7 @@ public class PetService {
     }
 
     public Executor addPet() {
-        return () -> this.pets.add(menuService.addPet());
+        return () -> pets.add(menuService.addPet());
     }
 
     public Executor showAllPets() {
